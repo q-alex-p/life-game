@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onresize="Resizer()">
+    <Div id="main_div">
+        <canvas id="holst" width="100" height="100">Your browser does not support the Canvas element.</canvas>
+        <div id="stat_div">
+            <img src="img\1.png">
+            <img src="img\2.png">
+            <img src="img\3.png">
+            <img src="img\4.png">
+            <img src="img\5.png">
+            <img src="img\6.png">
+            <img src="img\7.png">
+        </div>
+        <div id="menu_div">
+            Количество ячеек
+            <BR>
+            <input type="range" min="30" max="100" value="30" id="scale" step="1" oninput="change_scale(2)">
+            <output for="scale" id="scale_value">30</output>
+            <input type="button" value="<" onclick="change_scale(0)">
+            <input type="button" value=">" onclick="change_scale(1)">
+            <BR>
+            <HR> Номер шага
+            <BR>
+            <input type="range" min="1" max="100000" value="1" id="steps" step="1" oninput="change_steps(2)">
+            <output for="steps" id="steps_value">1</output>
+            <input type="button" value=">" onclick="change_steps(1)">
+            <BR>
+            <HR> Скорость
+            <BR>
+            <input type="range" min="1" max="500" value="50" id="speed" step="1" oninput="change_speed(2)">
+            <output for="speed" id="speed_value">50</output>
+            <input type="button" value="<" onclick="change_speed(0)">
+            <input type="button" value=">" onclick="change_speed(1)">
+            <BR>
+            <input type="button" value="Старт" onclick="play()"> ----------
+            <input type="button" value="Стоп" onclick="stop()">
+            <HR>
+            <BR>
+            <input type="button" value="ОЧИСТИТЬ" onclick="clean()"> ----------
+            <input type="button" value="On/Off сеть" onclick="NetOnOff()">
+            <BR>
+            <HR>
+            <BR>
+            <input type="button" value="Сохранить" onclick="saver()"> ----------
+            <input type="button" value="Загрузить" onclick="loader()">
+            <BR>
+            <BR>
+            <HR>
+            <BR>
+            <textarea id="textt" rows="16" cols="31" value=""></textarea>
+        </div>
+    </Div>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="loader.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+#main_div{
+	left: 0px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: black;
+}
+#menu_div{
+	left: 80%;
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #fefcea, #f1da36);
+    border-left: 4px double grey;
+}
+#holst{
+	left: 20%;
+    top: 0px;
+    position: absolute;
+    background: black;
+
+}
+#stat_div{
+	left: 0px;
+    top: 80%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-top: 4px double grey;
+}
+img{
+    position: static;
+    height: 20%;
+}
